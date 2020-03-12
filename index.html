@@ -1,0 +1,36 @@
+<div class="_loader">
+    <div></div>
+    <div></div>
+
+</div>
+<style>
+    ._loader div {
+        position: absolute;
+        border: 4px solid #482fd6;
+        border-radius: 50%;
+        animation: _loader 1s ease-out infinite;
+    }
+
+
+    ._loader div:nth-child(2) {
+        animation-delay: -0.5s;
+    }
+
+    @keyframes _loader {
+        0% {
+            top: 40px;
+            left: 40px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        100% {
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+        }
+    }
+</style>
